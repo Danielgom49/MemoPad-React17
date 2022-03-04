@@ -59,8 +59,14 @@ const Notes = ({ state, setState }) => {
 
     // FUNCION PARA ELIMINAR TODAS LAS NOTAS
     const clearCompleted = () => {
+        DeleteComplete({ notas })
     }
 
+    const DeleteComplete = (nota) => {
+        // localStorage.clear();
+        // dispatch(CompleteDelete(nota.nota))
+        console.log(nota.notas);
+    }
     return (
         <Container>
             <div>

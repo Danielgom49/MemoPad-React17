@@ -17,7 +17,11 @@ export const NotasReducer = (state = initialState, action) => {
                 ...state,
                 notas: state.notas.filter(nota => nota.nota.id !== action.payload)
             }
-
+        case types.completeDelete:
+            return {
+                ...state,
+                notas: action.payload
+            }
         default:
             return state
     }

@@ -14,3 +14,10 @@ export const Borrar = (id) => {
         payload: id
     }
 }
+
+export const CompleteDelete = (nota) => {
+    return {
+        type: types.completeDelete,
+        payload: nota
+    }
+}
